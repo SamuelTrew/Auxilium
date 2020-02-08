@@ -24,7 +24,7 @@ var lc1306 = jQuery.noConflict(true);
                     if (newValue !== 'deactivate') {
                         chrome.tabs.executeScript({ file: 'background.js' });
                     } else {
-                        chrome.tabs.executeScript({ file: 'reload.js' });
+                        chrome.tabs.executeScript({ file: 'refresh.js' });
                     }
 
                 });
