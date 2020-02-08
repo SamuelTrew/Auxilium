@@ -7,10 +7,31 @@
             <feColorMatrix
                     in="SourceGraphic"
                     type="matrix"
-                    values="0.567, 0.433, 0,     0, 0
+                    values=
+               "0.567, 0.433, 0,     0, 0
                 0.558, 0.442, 0,     0, 0
                 0,     0.242, 0.758, 0, 0
                 0,     0,     0,     1, 0"/>
+        </filter>
+        <filter id="testM">
+            <feColorMatrix
+                    in="SourceGraphic"
+                    type="matrix"
+                    values=
+            "0.0, 2.02344, -2.52581, 0, 0
+            0.0, 1.0, 0.0, 0, 0
+            0.0, 0.0, 1.0, 0, 0
+            0, 0, 0, 1, 0"/>
+        </filter>
+        <filter id="testM2">
+            <feColorMatrix
+                    in="SourceGraphic"
+                    type="matrix"
+                    values=
+           "0.0, 1.02344, -1.22581, 0, 0
+            0.0, 0.5, 0.0, 0, 0
+            0.0, 0.0, 0.5, 0, 0
+            0, 0, 0, 1, 0"/>
         </filter>
         <filter id="protanomaly">
             <feColorMatrix
