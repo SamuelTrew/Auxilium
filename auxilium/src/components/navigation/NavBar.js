@@ -11,7 +11,7 @@ const urls = [
         name: "About"
     },
     {
-        path: "/learn",
+        path: "/dyslexia",
         name: "Learn"
     },
     {

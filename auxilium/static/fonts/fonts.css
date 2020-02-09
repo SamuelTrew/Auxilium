@@ -2,3 +2,9 @@
     font-family: "OpenDyslexic";
     src: url("OpenDyslexic-Regular.otf");
 }
+
+.dys_bod {
+    font-family: OpenDyslexic, serif;
+    font-size: 18px;
+}
+
