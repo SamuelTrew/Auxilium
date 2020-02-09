@@ -1,4 +1,6 @@
 import React from 'react';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 const ADHD = () => {
     return (
@@ -8,16 +10,21 @@ const ADHD = () => {
                 <div className="container__row section-container">
                     <div className="container__col-sm-12">
                         <h4 className="is-very-dark-text" style={{margin: '10px', marginLeft: '0'}}>
-                            Want to talk?
+                            Vision for Learning disabilities.
                         </h4>
                         <p className="is-very-dark-text">
-                        Use the form below if you want to make a request for a new project, website, tutoring, or personal statement advice! Let's see what your vision is and build something awesome together <span role="img" aria-label="smiling emoji">😊</span>.
+                            Do you suffer from not being able to read large blocks of text or extract key data points from passages?
                         </p>
                         <p className="is-very-dark-text">
-                            Something else? If you're looking for someone to join your team with new energy, ideas and skills for a placement or internship - let's talk! <span role="img" aria-label="nerd emoji">🤓</span>
+                            We have a tool that can help make staying focused on your browsing session easier while giving
+                            you sight into more information than before.
                         </p>
 
-                        <a id="dyslexia-link"className="button" href="/dyslexia" style={{cursor: "pointer"}}>
+                        <a id="github" className="button" href="https://github.com/SamuelTrew/ICHACK20" style={{cursor: "pointer"}}>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a id="vision-link"className="button" href="/vision" style={{cursor: "pointer", margin: 5}}>
                             <span>Click me</span>
                         </a>
                     </div>
@@ -25,6 +32,6 @@ const ADHD = () => {
             </div>
         </>
     );
-}
+};
 
 export default ADHD;

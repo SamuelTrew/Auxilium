@@ -1,17 +1,5 @@
 import React from "react";
-// import { Link } from "gatsby";
 import Layout from "../components/layout";
-import Dyslexia from "./dyslexia";
-// import Footer from '../components/navigation/Footer';
-import Slider from "../components/Slider"
-import CiscoImage from "../images/cisco.jpg"
-import NextJumpImage from "../images/nextjump.jpg"
-import ThoughtMachineImage from "../images/thoughtmachine.jpg"
-import AmexImage from "../images/amex.jpg"
-import ImprobableImage from "../images/improbable.jpg"
-import EFImage from "../images/ef.png"
-import ImageUpload from "../components/ImageUpload";
-
 import ColourBlindnessSection from "../components/pageSections/ColourBlindnessSection";
 import ADHDSection from "../components/pageSections/ADHDSection";
 import DyslexiaSection from "../components/pageSections/DyslexiaSection";

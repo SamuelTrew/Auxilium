@@ -39,7 +39,7 @@ export default class Dyslexia extends React.Component {
                   <div className="container__col-sm-6 pad"/>
                   <div className="container__col-sm-6 pad dys-font">
                      Dyslexic people don't find it as easy. <br/>
-                     <img src={image} alt="Dyslexia" style={{height: 200}}/>
+                     <img src={image} alt="Dyslexia" style={{height: 200}}/><br/>
                      Their ability to use the web to its full extent is limited. <br/>
                   </div>
                </div>
@@ -51,7 +51,7 @@ export default class Dyslexia extends React.Component {
 
                <div className="text-align-center">
                <textarea
-                  name="message" rows="10" cols="60"
+                  name="message" rows="2" cols="60"
                   placeholder="Enter test text here"
                   onChange={this.handleChange}
                />
