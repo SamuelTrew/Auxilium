@@ -1,3 +1,5 @@
 waspLineReader.zip
 extension/contentScript.js
 .idea/
+auxilium/node_modules
+auxilium/package-lock.json
