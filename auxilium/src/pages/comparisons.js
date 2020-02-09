@@ -9,6 +9,28 @@ import ImprobableImage from "../images/improbable.jpg"
 import EFImage from "../images/ef.png"
 
 class ComparisonPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {filter_type: 'protanopia'};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
+  handleOptionChange = changeEvent => {
+    this.setState({
+      filter_type: changeEvent.target.value
+    });
+  }
+
   componentDidMount() {
     function initComparisons() {
       console.log("TEST")
@@ -63,19 +85,141 @@ class ComparisonPage extends React.Component {
     return (
       <>
         <Layout>
-          <h1>hello</h1>
-          <Slider img_src={CiscoImage} />
-          <br />
-          <Slider img_src={NextJumpImage} />
-          <br />
-          <Slider img_src={ThoughtMachineImage} />
-          <br />
-          <Slider img_src={AmexImage} />
-          <br />
-          <Slider img_src={ImprobableImage} />
-          <br />
-          <Slider img_src={EFImage} />
-          <br />
+          <div class="container comparisons-container">
+            <div class="container__row container-comparisons-row">
+              <div class="container__col-sm-3">
+                <h3>Select simulation</h3>
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="protanopia"
+                      checked={this.state.filter_type === "protanopia"}
+                      onChange={this.handleOptionChange}
+                      className={"form-check-input" + (this.state.filter_type === "protanopia" ? " checked" : "")}
+                    />
+                    Protanopia
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="protanomaly"
+                      checked={this.state.filter_type === "protanomaly"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Protanomaly
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="deuteranopia"
+                      checked={this.state.filter_type === "deuteranopia"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Deuteranopia
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="deuteranomaly"
+                      checked={this.state.filter_type === "deuteranomaly"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Deuteranomaly
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="tritanopia"
+                      checked={this.state.filter_type === "tritanopia"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Tritanopia
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="tritanomaly"
+                      checked={this.state.filter_type === "tritanomaly"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Tritanomaly
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="achromatopsia"
+                      checked={this.state.filter_type === "achromatopsia"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Achromatopsia
+                  </label>
+                </div>
+
+                <div className="form-check">
+                  <label>
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="achromatomaly"
+                      checked={this.state.filter_type === "achromatomaly"}
+                      onChange={this.handleOptionChange}
+                      className="form-check-input"
+                    />
+                    Achromatomaly
+                  </label>
+                </div>
+              </div>
+
+              <div class="container__col-sm-2"></div>
+
+              <div class="container__col-sm-7 container-comparisons-images">
+                <Slider img_src={CiscoImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={NextJumpImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={ThoughtMachineImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={AmexImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={ImprobableImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={EFImage} filter_type={this.state.filter_type} />
+                <br />
+              </div>
+            </div>
+          </div>
         </Layout>
       </>
     );
