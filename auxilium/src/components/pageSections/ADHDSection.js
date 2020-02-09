@@ -17,7 +17,7 @@ const ADHD = () => {
                         </p>
                         <p className="is-very-dark-text">
                             We have a tool that can help make staying focused on your browsing session easier while giving
-                            you sight into more information than before.
+                            you sight into more information than before. 😳
                         </p>
 
                         <a id="github" className="button" href="https://github.com/SamuelTrew/ICHACK20" style={{cursor: "pointer"}}>
