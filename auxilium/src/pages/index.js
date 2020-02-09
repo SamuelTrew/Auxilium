@@ -75,18 +75,6 @@ class IndexPage extends React.Component {
           <ColourBlindnessSection/>
           <DyslexiaSection/>
           <ADHDSection/>
-          <Slider img_src={CiscoImage} />
-            <br />
-            <Slider img_src={NextJumpImage} />
-            <br />
-            <Slider img_src={ThoughtMachineImage} />
-            <br />
-            <Slider img_src={AmexImage} />
-            <br />
-            <Slider img_src={ImprobableImage} />
-            <br />
-            <Slider img_src={EFImage} />
-            <br />
         </Layout>
       </>
     );
