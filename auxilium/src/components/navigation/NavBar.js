@@ -8,16 +8,16 @@ const urls = [
         name: "Home"
     },
     {
-        path: "/about",
-        name: "About"
+        path: "/comparisons",
+        name: "Comparisons"
+    },
+    {
+        path: "/test",
+        name: "Test"
     },
     {
         path: "/dyslexia",
         name: "Learn"
-    },
-    {
-        path: "/comparisons",
-        name: "Comparisons"
     },
     {
         path: "https://github.com/SamuelTrew/ICHACK20",
@@ -30,10 +30,12 @@ const navbar = () => {
         <>
         <nav className="heightOffset navbar">
             <div className="innerContainer" >
-                <img src={Logo} style={{height: '60px',margin: '0px'}}/>
+                <a href="/">
+                    <img src={Logo} className="logo" />
+                </a>
                 <div className="nav">
                     {urls.map(({ path, name }) => (
-                      <a className="navLinks" href={path}>
+                      <a className="navLinks" key={path} href={path}>
                           <div style={{display:'flex', alignItems:"center"}}>
                             <span>
                                 {name}

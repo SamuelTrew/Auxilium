@@ -11,14 +11,17 @@ const Dyslexia = () => {
                             Designing for the masses isn't enough.
                         </h4>
                         <p className="is-very-dark-text">
-                        Here we need an awesome sentence about this shit.
+                        Dyslexia is a learning disorder that involves difficulty reading due to problems identifying speech sounds and learning how they relate to letters and words (decoding). 🔠
                         </p>
                         <p className="is-very-dark-text">
-                        Maybe another one: Here we need an awesome sentence about this shit.
+                        Reading is a pretty fundamental part of the web experience. Designers, engineers, and developers should consider this fraction of their user-base in their design process. Unfortunately, this typically not the case. 😞
+                        </p>
+                        <p className="is-very-dark-text">
+                        It is difficult to justify ignoring 15% of your userbase. Auxilium is the first step in the right direction. 👍
                         </p>
                         
-                        <a id="dyslexia-link"className="button" href="/dyslexia" style={{cursor: "pointer"}}>
-                            <span>Click me</span>
+                        <a id="dyslexia-link" className="button" href="/dyslexia" style={{cursor: "pointer"}}>
+                            <span>Learn</span>
                         </a>
                     </div>
                 </div>

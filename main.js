@@ -14,15 +14,15 @@
    }
 
 // Color all lines in the page
-   function applyGradient(colours, color_text, gradient_size, choice1, choice2, choice3, RG_blind) {
+   function applyGradient(colors, color_text, gradient_size, choice1, choice2, choice3, RG_blind) {
       if (choice1) {
-         colours = ["#0000ff", "#007c07"];
+         colors = ["#0000ff", "#007c07"];
       } else if (choice2) {
-         colours = ["#037900", "#6e0068"];
+         colors = ["#037900", "#6e0068"];
       } else if (choice3) {
-         colours = ["#a80008", "#09006e"];
+         colors = ["#a80008", "#09006e"];
       } else if (RG_blind) {
-			colours = ["#080078", "#9e9b00"];
+			colors = ["#080078", "#9e9b00"];
 		}
 
       const paragraphs = document.getElementsByTagName('p');
@@ -35,7 +35,7 @@
 
          for (let line of lines) {
             // Alternate between left and right for every color
-            const active_color = hex_to_rgb(colours[coloridx]);
+            const active_color = hex_to_rgb(colors[coloridx]);
 
             // Flip array around if on left to color correctly
             const is_left = (lineno % 2 === 0);
@@ -56,7 +56,7 @@
             // Increment color index after every left/right pair, and lineno
             // after every line
             if (!is_left) {
-               coloridx = (coloridx + 1) % colours.length;
+               coloridx = (coloridx + 1) % colors.length;
             }
             lineno += 1;
          }
@@ -67,7 +67,7 @@
    chrome.runtime.onMessage.addListener((message) => {
       if (message.command === "apply_gradient") {
          applyGradient(
-            message.colours, message.color_text, message.gradient_size,
+            message.colors, message.color_text, message.gradient_size,
 				message.choice1, message.choice2, message.choice3, message.RG_blind
          );
       } else if (message.command === "reset") {

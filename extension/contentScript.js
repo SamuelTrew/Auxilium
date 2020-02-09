@@ -128,7 +128,7 @@
 
          for (let line of lines) {
             // Alternate between left and right for every color
-            const active_color = hex_to_rgb(colours[coloridx]);
+            const active_color = hex_to_rgb(colors[coloridx]);
 
             // Flip array around if on left to color correctly
             const is_left = (lineno % 2 === 0);
@@ -149,7 +149,7 @@
             // Increment color index after every left/right pair, and lineno
             // after every line
             if (!is_left) {
-               coloridx = (coloridx + 1) % colours.length;
+               coloridx = (coloridx + 1) % colors.length;
             }
             lineno += 1;
          }
@@ -160,7 +160,7 @@
    chrome.runtime.onMessage.addListener((message) => {
       if (message.command === "apply_gradient") {
          applyGradient(
-            message.colours, message.color_text, message.gradient_size,
+            message.colors, message.color_text, message.gradient_size,
 				message.choice1, message.choice2, message.choice3, message.RG_blind
          );
       } else if (message.command === "reset") {

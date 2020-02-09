@@ -4,13 +4,13 @@ import Layout from "../components/layout";
 const Vision = () => (
    <>
       <Layout>
+            <br />
+            <br />
+            <div className="container">
+                  <p>Use our Chrome extension on this page to recolor the text to help with concentration and improve cognition, especially in people with ADHD/ADD symptoms.</p>
+            </div>
+            <br />
          <p className="container">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit mauris mauris, pharetra eleifend lacus aliquam vel.
-               Phasellus vel ligula at tellus fermentum mattis. Praesent scelerisque sapien id risus pulvinar, ac cursus magna vehicula.
-               Mauris cursus, dolor id placerat aliquet, leo lorem bibendum mauris, in interdum lacus mi vel orci. Nullam luctus lacus in accumsan feugiat.
-               Nullam porttitor hendrerit molestie. Vestibulum et ornare augue. Aenean sed pulvinar ipsum.
-               Vestibulum in diam hendrerit lacus egestas condimentum id quis leo.
-               <br/>
                Nunc convallis pharetra tellus, eget bibendum ligula euismod quis. Etiam sed nisi vel augue porta tincidunt ut et magna.
                Nullam libero lectus, lobortis ut consequat sed, congue eget quam. Duis ac finibus diam. Sed eget lacus blandit, convallis ex at, posuere nisl.
                Donec ornare lobortis velit. Donec consequat nec felis ut fermentum. Nunc sed nisi vulputate, venenatis augue eu, eleifend elit.

@@ -30,7 +30,7 @@ main {
     height: calc(100vh - 60px - 80px);
     min-height: calc(100vh - 60px - 80px);
     max-height: calc(100vh - 60px - 80px);
-    padding: 20px;
+    padding: 2rem 1rem;
 }
 
 .container-comparisons-row {
@@ -113,4 +113,48 @@ main {
 
 .nav {
     display: flex;
+}
+
+.logo {
+    padding: 8px 1rem;
+}
+.logo:hover {
+    background: #eeeeee;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+textarea {
+    resize: none;
+    border: 4px solid black;
+    border-radius: 8px;
+    padding: 8px;
 }

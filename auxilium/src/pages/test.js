@@ -1,12 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
-import Slider from "../components/Slider"
-import CiscoImage from "../images/cisco.jpg"
-import NextJumpImage from "../images/nextjump.jpg"
-import ThoughtMachineImage from "../images/thoughtmachine.jpg"
-import AmexImage from "../images/amex.jpg"
-import ImprobableImage from "../images/improbable.jpg"
-import EFImage from "../images/ef.png"
+import Slider from "../components/Slider";
+import ImageUpload from "../components/ImageUpload";
 
 class ComparisonPage extends React.Component {
   constructor(props) {
@@ -83,7 +78,8 @@ class ComparisonPage extends React.Component {
           <div className="container comparisons-container">
             <div className="container__row container-comparisons-row">
               <div className="container__col-sm-3">
-                <h3>Select simulation</h3>
+                <h3>Test</h3>
+                <p>Upload your own image and see how it appears through a color impairment filter.</p>
                 <div className="form-check" onClick={this.handleOptionChange}>
                   <label>
                     Protanopia
@@ -200,18 +196,7 @@ class ComparisonPage extends React.Component {
               <div className="container__col-sm-1"></div>
 
               <div className="container__col-sm-8 container-comparisons-images">
-                <Slider img_src={CiscoImage} filter_type={this.state.filter_type} />
-                <br />
-                <Slider img_src={NextJumpImage} filter_type={this.state.filter_type} />
-                <br />
-                <Slider img_src={ThoughtMachineImage} filter_type={this.state.filter_type} />
-                <br />
-                <Slider img_src={AmexImage} filter_type={this.state.filter_type} />
-                <br />
-                <Slider img_src={ImprobableImage} filter_type={this.state.filter_type} />
-                <br />
-                <Slider img_src={EFImage} filter_type={this.state.filter_type} />
-                <br />
+                <ImageUpload filter_type={this.state.filter_type} />
               </div>
             </div>
           </div>

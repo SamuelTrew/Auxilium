@@ -9,7 +9,7 @@ export default class Dyslexia extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
-         dys_text: "Hello there, General Kenobi"
+         dys_text: ""
       };
 
       this.handleChange = this.handleChange.bind(this);
@@ -46,24 +46,25 @@ export default class Dyslexia extends React.Component {
 
                <br/><br/>
                <h2 className="text-align-center">
-                  Text Area to try out the difference:
+                  Test the difference
                </h2>
 
                <div className="text-align-center">
                <textarea
-                  name="message" rows="2" cols="60"
-                  placeholder="Enter test text here"
+                  name="message" rows="4" cols="60"
+                  placeholder="Enter your text here..."
                   onChange={this.handleChange}
                />
                </div>
+               <br />
 
                <div className="container__row text-align-center">
                   <div className="container__col-sm-6">
-                     {this.state.dys_text}
+                     {this.state.dys_text ? this.state.dys_text : "Hello there, General Kenobi"}
                   </div>
 
                   <div className="container__col-sm-6 dys-font">
-                     {this.state.dys_text}
+                     {this.state.dys_text ? this.state.dys_text : "Hello there, General Kenobi"}
                   </div>
                </div>
 
