@@ -22,6 +22,7 @@ $image-height: 195px;
   vertical-align: middle;
   width: $image-width;
   height: $image-height;
+  max-width: initial;
 }
 
 .overlay {
@@ -49,8 +50,29 @@ $image-height: 195px;
   left: -15px;
 }
 
-.filter-pro {
+.filter-protanopia {
   filter: url('filters.svg#protanopia');
+}
+.filter-protanomaly {
+  filter: url('filters.svg#protanomaly');
+}
+.filter-deuteranopia {
+  filter: url('filters.svg#deuteranopia');
+}
+.filter-deuteranomaly {
+  filter: url('filters.svg#deuteranomaly');
+}
+.filter-tritanopia {
+  filter: url('filters.svg#tritanopia');
+}
+.filter-tritanomaly {
+  filter: url('filters.svg#tritanomaly');
+}
+.filter-achromatopsia {
+  filter: url('filters.svg#achromatopsia');
+}
+.filter-achromatomaly {
+  filter: url('filters.svg#achromatomaly');
 }
 
 .filter-undo {
