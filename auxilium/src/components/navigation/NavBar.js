@@ -15,6 +15,10 @@ const urls = [
         name: "Learn"
     },
     {
+        path: "/comparisons",
+        name: "Comparisons"
+    },
+    {
         path: "https://github.com/SamuelTrew/ICHACK20",
         name: "Chrome Extension"
     }
