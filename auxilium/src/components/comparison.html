@@ -13,7 +13,7 @@
          box-sizing: border-box;
       }
 
-      .container {
+      .rootContainer {
          position: relative;
          height: 226px;
       }
@@ -27,14 +27,14 @@
 
       .image img {
          display: block;
-         vertical-align: middle;
+         /* vertical-align: middle; */
          width: var(--image-width);
          height: var(--image-height);
       }
 
       .overlay {
          display: block;
-         vertical-align: middle;
+         /* vertical-align: middle; */
          width: var(--image-width);
          height: var(--image-height);
       }
@@ -144,7 +144,7 @@
    <label><input type='checkbox' onclick='handleClick(this);'>Enable</label>
 </div>
 
-<div class="container">
+<div height='226px'>
    <div class="image">
       <img class="normal" src="../images/test.png">
    </div>
@@ -154,7 +154,7 @@
    </div>
 </div>
 
-<div class="container">
+<div height='226px'>
    <div class="image">
       <img class="filter-undo" src="../images/test.png">
    </div>
@@ -164,7 +164,7 @@
    </div>
 </div>
 
-<div class="container">
+<div height='226px'>
    <div class="image">
       <img class="filter-undo2" src="../images/test.png">
    </div>
@@ -174,7 +174,7 @@
    </div>
 </div>
 
-<div class="container">
+<div height='226px'>
    <div class="image filter-pro">
       <img class="filter-undo" src="../images/test.png">
    </div>
@@ -184,7 +184,7 @@
    </div>
 </div>
 
-<div class="container">
+<div height='226px'>
    <div class="image filter-pro">
       <img class="filter-undo2" src="../images/test.png">
    </div>
