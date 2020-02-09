@@ -1,0 +1,16 @@
+@import 'navigation';
+@import 'typography';
+@import 'layout';
+@import 'vars';
+
+html {
+    background-color: white;;
+}
+
+.input-field {
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    height: 2rem;
+    width: 40%;
+}

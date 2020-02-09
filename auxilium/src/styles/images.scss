@@ -1,0 +1,103 @@
+// removing auto margin and padding on image type component
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.home-screen {
+    height: 80vh;
+    padding-top: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+// Facebook Social Icon onHover Toggle 
+.facebookIcon {
+    height: 10%;
+    width: 10%;
+    margin: 10px;
+    padding: 0;
+    margin-bottom: 100px;
+    background: url("../images/icons/socialMediaIcons/facebook-grayscale.svg") no-repeat;
+    background-size: 100%;
+}
+.facebookIcon:hover {
+    background: url("../images/icons/socialMediaIcons/facebook-color.svg") no-repeat;
+    background-size: 100%;
+}
+
+// Facebook Social Icon onHover Toggle 
+.githubIcon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 0px;
+    background: url("../images/icons/socialMediaIcons/github-grayscale.svg") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.githubIcon:hover {
+    background: url("../images/icons/socialMediaIcons/github-color.svg") no-repeat;
+    background-size: 100%;
+}
+
+// Facebook Social Icon onHover Toggle 
+.linkedinIcon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 0;
+    background: url("../images/icons/socialMediaIcons/linkedin-grayscale.svg") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.linkedinIcon:hover {
+    background: url("../images/icons/socialMediaIcons/linkedin-color.svg") no-repeat;
+    background-size: 100%;
+}
+
+// Facebook Social Icon onHover Toggle 
+.mediumIcon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 0;
+    background: url("../images/icons/socialMediaIcons/medium-grayscale.svg") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.mediumIcon:hover {
+    background: url("../images/icons/socialMediaIcons/medium-color.svg") no-repeat;
+    background-size: 100%;
+}
+
+// Facebook Social Icon onHover Toggle 
+.spotifyIcon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 0;
+    background: url("../images/icons/socialMediaIcons/spotify-grayscale.svg") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.spotifyIcon:hover {
+    background: url("../images/icons/socialMediaIcons/spotify-color.svg") no-repeat;
+    background-size: 100%;
+}
+
+// Facebook Social Icon onHover Toggle 
+.twitterIcon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 0;
+    background: url("../images/icons/socialMediaIcons/twitter-grayscale.svg") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+.twitterIcon:hover {
+    background: url("../images/icons/socialMediaIcons/twitter-color.svg") no-repeat;
+    background-size: 100%;
+}

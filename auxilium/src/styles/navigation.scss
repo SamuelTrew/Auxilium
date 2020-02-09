@@ -1,0 +1,67 @@
+$nav-height: 60px;
+// $mobile-menu-width: 150px;
+
+.heightOffset {
+    height: $nav-height;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.50);
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    img {
+        max-width: 60px;
+        max-height: 35px;
+        margin: 5px;
+    }
+}
+
+.navLinks {
+    display: flex;
+    cursor: pointer;
+    font-family: 'AvenirNext-Regular';
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8125rem;
+        div {
+            display: flex;
+            align-items: center;
+            padding: 0 0.625rem 0 0.625rem;
+            transition: background-color 0.1s linear;
+            height: 100%;
+        }
+        div:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.footer-style {
+   text-align: center;
+   font-size: 100px; 
+   height: 80px;
+}
