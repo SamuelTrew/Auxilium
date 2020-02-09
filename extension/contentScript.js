@@ -107,15 +107,15 @@
    }
 
 // Color all lines in the page
-   function applyGradient(colours, color_text, gradient_size, choice1, choice2, choice3, RG_blind) {
+   function applyGradient(colors, color_text, gradient_size, choice1, choice2, choice3, RG_blind) {
       if (choice1) {
-         colours = ["#0000ff", "#007c07"];
+         colors = ["#0000ff", "#007c07"];
       } else if (choice2) {
-         colours = ["#037900", "#6e0068"];
+         colors = ["#037900", "#6e0068"];
       } else if (choice3) {
-         colours = ["#a80008", "#09006e"];
+         colors = ["#a80008", "#09006e"];
       } else if (RG_blind) {
-			colours = ["#080078", "#9e9b00"];
+			colors = ["#080078", "#9e9b00"];
 		}
 
       const paragraphs = document.getElementsByTagName('p');
