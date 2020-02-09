@@ -4,8 +4,7 @@ import Layout from "../components/layout";
 const Vision = () => (
    <>
       <Layout>
-         <div className="container">
-            <h3>
+         <p className="container">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit mauris mauris, pharetra eleifend lacus aliquam vel.
                Phasellus vel ligula at tellus fermentum mattis. Praesent scelerisque sapien id risus pulvinar, ac cursus magna vehicula.
                Mauris cursus, dolor id placerat aliquet, leo lorem bibendum mauris, in interdum lacus mi vel orci. Nullam luctus lacus in accumsan feugiat.
@@ -35,8 +34,7 @@ const Vision = () => (
                Suspendisse sit amet lorem sollicitudin, lobortis lacus sit amet, dignissim magna. Quisque molestie vitae eros quis tincidunt.
                Phasellus bibendum justo at dictum suscipit. Maecenas eu eros ut felis luctus dignissim ut sit amet ante.
                Integer quam ligula, suscipit vel diam a, faucibus euismod leo. Ut pharetra tempus pharetra.
-            </h3>
-         </div>
+         </p>
       </Layout>
    </>
 )
