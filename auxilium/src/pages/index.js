@@ -11,6 +11,6 @@ const IndexPage = () => (
     <Dyslexia/>
   </Layout>
   </>
-)
+);
 
 export default IndexPage;
