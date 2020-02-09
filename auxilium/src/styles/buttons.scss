@@ -1,0 +1,38 @@
+.button {
+    background-color: #3A80FE;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 200px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.clear-button {
+    background: white;
+    border-radius: 20px;
+    border: none;
+    color: #FD3D37;
+    height: 40px;
+    width: 100px;
+    margin: 1rem;
+    margin-left: 0;
+    font-family: 'Avenir Next';
+}
+
+.submit-button {
+    background: #FD3D37;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100px;
+    margin: 1rem;
+    margin-left: 0;
+    font-family: 'Avenir Next';
+}

@@ -2,6 +2,7 @@
 @import 'typography';
 @import 'layout';
 @import 'vars';
+@import 'buttons';
 
 html {
     background-color: white;;
@@ -17,6 +18,12 @@ main {
     border: none;
     height: 2rem;
     width: 40%;
+}
+
+.highlight {
+    background: #EBECED;
+    padding: 16px;
+    margin-bottom: 10px;
 }
 
 .comparisons-container {
