@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="419px" height="99px" viewBox="0 0 419 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+c<?xml version="1.0" encoding="UTF-8"?>
+<svg width="357px" height="62px" viewBox="0 0 357 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>Artboard</title>
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <text id="Auxilium" font-family="Avenir-Book, Avenir" font-size="50" font-weight="normal" letter-spacing="15" fill="#36A1A5">
-            <tspan x="101" y="68">Auxilium</tspan>
-        </text>
-        <circle id="Oval" fill="#4B9A9D" cx="46" cy="34" r="18"></circle>
-        <circle id="Oval" fill="#909090" cx="74.5" cy="60.5" r="14.5"></circle>
-        <circle id="Oval" fill="#96E3E6" cx="38" cy="67" r="11"></circle>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-27.000000, -16.000000)">
+            <g id="Group" transform="translate(27.000000, 15.000000)">
+                <text id="AUXILIUM" font-family="Poppins-Medium, Poppins" font-size="45" font-weight="400" letter-spacing="10.8" fill="#1F1F1F">
+                    <tspan x="83" y="47">AUXILIUM</tspan>
+                </text>
+                <circle id="Oval" fill="#1364F5" cx="19" cy="19" r="18"></circle>
+                <circle id="Oval" fill="#6A6A6A" cx="47.5" cy="45.5" r="14.5"></circle>
+                <circle id="Oval" fill-opacity="0.61565778" fill="#3A80FE" cx="11" cy="52" r="11"></circle>
+            </g>
+        </g>
     </g>
 </svg>
