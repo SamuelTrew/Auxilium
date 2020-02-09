@@ -55,6 +55,10 @@ main {
     user-select: none;
 }
 
+.form-check label {
+    pointer-events: none;
+}
+
 /* Hide the browser's default radio button */
 .form-check input {
     position: absolute;
@@ -65,7 +69,7 @@ main {
 }
 
 /* Create a custom radio button */
-.form-check-input {
+.form-check-mark {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,29 +80,29 @@ main {
 }
 
 /* On mouse-over, add a grey background color */
-.form-check:hover input ~ .form-check-input {
+.form-check:hover input ~ .form-check-mark {
     background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.form-check input.checked ~ .form-check-input {
+.form-check input:checked ~ .form-check-mark {
     background-color: #2196F3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.form-check-input:after {
+.form-check-mark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.form-check input.checked ~ .form-check-input:after {
+.form-check input:checked ~ .form-check-mark:after {
     display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.form-check .form-check-input:after {
+.form-check .form-check-mark:after {
     top: 9px;
     left: 9px;
     width: 8px;
