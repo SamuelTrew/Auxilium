@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Comparison</title>
+   <style>
+      :root {
+         --image-width: 360px;
+         --image-height: 226px;
+      }
+
+      * {
+         box-sizing: border-box;
+      }
+
+      .container {
+         position: relative;
+         height: 226px;
+      }
+
+      .image {
+         position: absolute;
+         width: auto;
+         height: auto;
+         overflow: hidden;
+      }
+
+      .image img {
+         display: block;
+         vertical-align: middle;
+         width: var(--image-width);
+         height: var(--image-height);
+      }
+
+      .overlay {
+      }
+
+      .slider {
+         position: absolute;
+         z-index: 9;
+         width: 10px;
+         height: var(--image-height);
+         background-color: black;
+         left: calc(var(--image-width) / 2 - 5px);
+      }
+
+      .slider .circle {
+         position: absolute;
+         z-index: 9;
+         cursor: ew-resize;
+         width: 40px;
+         height: 40px;
+         background-color: #2196F3;
+         opacity: 0.7;
+         border-radius: 50%;
+         top: calc(var(--image-height) / 2 - 20px);
+         left: -15px;
+      }
+
+      .filter-pro {
+         filter: url('filters.svg#protanopia');
+      }
+
+      .filter-undo {
+         filter: url('filters.svg#testM');
+      }
+      .filter-undo2 {
+         filter: url('filters.svg#testM2');
+      }
+   </style>
+   <script>
+      function initComparisons() {
+         let overlay = document.getElementsByClassName("overlay");
+         for (let i = 0; i < overlay.length; i++) {
+            compareImages(overlay[i]);
+         }
+         function compareImages(img) {
+            let clicked = 0;
+            let width = img.offsetWidth;
+            let slider = img.previousElementSibling;
+            img.style.width = width / 2 + "px";
+            slider.addEventListener("mousedown", slideReady);
+            window.addEventListener("mouseup", slideFinish);
+            slider.addEventListener("touchstart", slideReady);
+            window.addEventListener("touchstop", slideFinish);
+            function slideReady(event) {
+               event.preventDefault();
+               clicked = 1;
+               window.addEventListener("mousemove", slideMove);
+               window.addEventListener("touchmove", slideMove);
+            }
+            function slideFinish() {
+               clicked = 0;
+            }
+            function slideMove(event) {
+               let pos;
+               if (clicked === 0) return false;
+               pos = getCursorPos(event)
+               if (pos < 0) pos = 0;
+               if (pos > width) pos = width;
+               slide(pos);
+            }
+            function getCursorPos(event) {
+               let rect, x = 0;
+               event = event || window.event;
+               rect = img.getBoundingClientRect();
+               x = event.pageX - rect.left;
+               x = x - window.pageXOffset;
+               return x;
+            }
+            function slide(x) {
+               img.style.width = x + "px";
+               slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            }
+         }
+      }
+   </script>
+</head>
+<body>
+<div class="container">
+   <div class="image">
+      <img class="filter-pro" src="test.png">
+   </div>
+   <div class="slider"><div class="circle"></div></div>
+   <div class="image overlay">
+      <img class="normal" src="test.png">
+   </div>
+</div>
+
+<div class="container">
+   <div class="image">
+      <img class="filter-undo" src="test.png">
+   </div>
+   <div class="slider"><div class="circle"></div></div>
+   <div class="image overlay">
+      <img class="normal" src="test.png">
+   </div>
+</div>
+
+<div class="container">
+   <div class="image">
+      <img class="filter-undo2" src="test.png">
+   </div>
+   <div class="slider"><div class="circle"></div></div>
+   <div class="image overlay">
+      <img class="normal" src="test.png">
+   </div>
+</div>
+
+<div class="container">
+   <div class="image filter-pro">
+      <img class="filter-undo" src="test.png">
+   </div>
+   <div class="slider"><div class="circle"></div></div>
+   <div class="image overlay">
+      <img class="normal" src="test.png">
+   </div>
+</div>
+
+<div class="container">
+   <div class="image filter-pro">
+      <img class="filter-undo2" src="test.png">
+   </div>
+   <div class="slider"><div class="circle"></div></div>
+   <div class="image overlay">
+      <img class="normal" src="test.png">
+   </div>
+</div>
+
+<script>initComparisons();</script>
+</body>
+</html>
