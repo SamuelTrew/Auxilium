@@ -8,10 +8,10 @@ const Slider = ({ img_src }) => {
         <img className="filter-pro" src={ img_src } />
       </div>
       <div className="slider">
-        <div className="circle"></div>
+        <div className="circle" />
       </div>
       <div className="image overlay">
-        <img className="normal" src="test.png" />
+        <img className="normal" src={ img_src } />
       </div>
     </div>
   );
