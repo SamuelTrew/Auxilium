@@ -4,7 +4,12 @@ import Layout from "../components/layout";
 import Dyslexia from "./dyslexia";
 // import Footer from '../components/navigation/Footer';
 import Slider from "../components/slider"
-import TestImage from "../images/test.png"
+import CiscoImage from "../images/cisco.jpg"
+import NextJumpImage from "../images/nextjump.jpg"
+import ThoughtMachineImage from "../images/thoughtmachine.jpg"
+import AmexImage from "../images/amex.jpg"
+import ImprobableImage from "../images/improbable.jpg"
+import EFImage from "../images/ef.png"
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -62,7 +67,18 @@ class IndexPage extends React.Component {
       <>
         <Layout>
           <h1>hello</h1>
-          <Slider img_src={TestImage} />
+          <Slider img_src={CiscoImage} />
+          <br />
+          <Slider img_src={NextJumpImage} />
+          <br />
+          <Slider img_src={ThoughtMachineImage} />
+          <br />
+          <Slider img_src={AmexImage} />
+          <br />
+          <Slider img_src={ImprobableImage} />
+          <br />
+          <Slider img_src={EFImage} />
+          <br />
         </Layout>
       </>
     );
