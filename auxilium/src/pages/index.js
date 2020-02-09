@@ -10,6 +10,7 @@ import ThoughtMachineImage from "../images/thoughtmachine.jpg"
 import AmexImage from "../images/amex.jpg"
 import ImprobableImage from "../images/improbable.jpg"
 import EFImage from "../images/ef.png"
+import ImageUpload from "../components/ImageUpload";
 
 import TestSection from "../components/pageSections/TestSection";
 
@@ -68,6 +69,7 @@ class IndexPage extends React.Component {
     return (
       <>
         <Layout>
+          <ImageUpload/>
           <h1>hello</h1>
           <Slider img_src={CiscoImage} />
           <br />

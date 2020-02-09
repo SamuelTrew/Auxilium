@@ -1,31 +1,34 @@
 import React from 'react';
-import ImageUploader from 'react-images-upload';
+import Slider from "./Slider";
 
-class App extends React.Component {
+class ImageUpload extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { pictures: [] };
+        this.state = { image: [] };
         this.onDrop = this.onDrop.bind(this);
     }
 
     onDrop(pictureFiles, pictureDataURLs) {
-        this.setState({
-            pictures: this.state.pictures.concat(pictureFiles),
-        });
-    }3
+        if (pictureFiles.target.files && pictureFiles.target.files[0]) {
+            let reader = new FileReader();
+            reader.onload = (e) => {
+                this.setState({image: e.target.result});
+            };
+            reader.readAsDataURL(pictureFiles.target.files[0]);
+        }
+        // }
+    }
 
     render() {
         return (
-            <ImageUploader
-                withIcon={true}
-                buttonText='Upload your image'
-                onChange={this.onDrop}
-                imgExtension={['.jpg', '.gif', '.png', '.gif']}
-                maxFileSize={5242880}
-            />
+           <div>
+               <input type="file" onChange={this.onDrop} className="filetype" id="group_image"/>
+               <Slider img_src={this.state.image}/>
+
+           </div>
         );
     }
 }
 
-export default App;
+export default ImageUpload;
