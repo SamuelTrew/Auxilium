@@ -27,6 +27,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-images-upload": "^1.2.7",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
   },

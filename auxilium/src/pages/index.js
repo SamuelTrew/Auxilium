@@ -10,6 +10,7 @@ import ThoughtMachineImage from "../images/thoughtmachine.jpg"
 import AmexImage from "../images/amex.jpg"
 import ImprobableImage from "../images/improbable.jpg"
 import EFImage from "../images/ef.png"
+import ImageUpload from "../components/ImageUpload";
 
 import ColourBlindnessSection from "../components/pageSections/ColourBlindnessSection";
 import ADHDSection from "../components/pageSections/ADHDSection";
