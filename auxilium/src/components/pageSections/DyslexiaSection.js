@@ -17,8 +17,8 @@ const Dyslexia = () => {
                         Maybe another one: Here we need an awesome sentence about this shit.
                         </p>
                         
-                        <a id="dyslexia-link"className="button" href="/dyslexia" style={{cursor: "pointer"}}>
-                            <span>Click me</span>
+                        <a id="dyslexia-link" className="button" href="/dyslexia" style={{cursor: "pointer"}}>
+                            <span>Learn</span>
                         </a>
                     </div>
                 </div>

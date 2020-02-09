@@ -14,8 +14,11 @@ const ColourBlindness = () => {
                         Visual elements need to be considered carefully to ensure that accessibility is not lost for users with visual impairments. Such users often access websites with special high-contrast web browsers, screen readers, or by replacing CSS styles with a set of rules designed to remove visual barriers. In order to create a site that provides the greatest degree of access to the visually impaired, consider the following tips.
                         </p>
                         
-                        <a id="dyslexia-link"className="button" href="/comparisons" style={{cursor: "pointer"}}>
-                            <span>Click me</span>
+                        <a id="dyslexia-link" className="button" href="/comparisons" style={{cursor: "pointer"}}>
+                            <span>Comparisons</span>
+                        </a>
+                        <a id="dyslexia-link" className="button" href="/test" style={{cursor: "pointer", marginLeft: 8}}>
+                            <span>Test</span>
                         </a>
                     </div>
                 </div>

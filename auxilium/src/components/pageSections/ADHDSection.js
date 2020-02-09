@@ -24,8 +24,8 @@ const ADHD = () => {
                             <span>GitHub</span>
                         </a>
 
-                        <a id="vision-link"className="button" href="/vision" style={{cursor: "pointer", margin: 5}}>
-                            <span>Click me</span>
+                        <a id="vision-link" className="button" href="/vision" style={{cursor: "pointer", marginLeft: 8}}>
+                            <span>Vision</span>
                         </a>
                     </div>
                 </div>

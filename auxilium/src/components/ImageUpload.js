@@ -5,7 +5,7 @@ class ImageUpload extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { image: [] };
+        this.state = { image: null };
         this.onDrop = this.onDrop.bind(this);
     }
 
@@ -21,10 +21,17 @@ class ImageUpload extends React.Component {
 
     render() {
         return (
-           <div>
-               <input type="file" onChange={this.onDrop} className="filetype" id="group_image"/>
-               <Slider img_src={this.state.image}/>
+            <div>
+                <div className="upload-btn-wrapper">
+                    <button className="btn">Upload a file</button>
+                    <input type="file" name="myfile" onChange={this.onDrop} />
+                </div>
+                <br />
 
+                <div className={this.state.image ? "" : "hidden"}>
+                  <br />
+                  <Slider img_src={this.state.image} filter_type={this.props.filter_type} />
+                </div>
            </div>
         );
     }
