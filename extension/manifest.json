@@ -1,6 +1,6 @@
 {
-  "name": "Gradient Reader",
-  "version": "0.0.1",
+  "name": "Auxilium",
+  "version": "0.0.2",
   "description": "Read faster using color gradients",
   "manifest_version": 2,
   "background": {
@@ -14,6 +14,9 @@
   "browser_action": {
     "default_title": "Apply gradients",
     "default_popup": "menu/index.html"
+  },
+  "icons": {
+    "128": "logo.png"
   },
   "content_scripts": [
     {

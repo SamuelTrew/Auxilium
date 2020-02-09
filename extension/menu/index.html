@@ -31,6 +31,76 @@
       #gradient_size {
          width: 200px;
       }
+
+      /* Customize the label (the form-check) */
+      .form-check {
+         display: block;
+         position: relative;
+         padding-left: 35px;
+         margin-bottom: 12px;
+         cursor: pointer;
+         font-size: 12px;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+      }
+
+      .form-check label {
+         pointer-events: none;
+      }
+
+      /* Hide the browser's default radio button */
+      .form-check input {
+         position: absolute;
+         opacity: 0;
+         cursor: pointer;
+         height: 0;
+         width: 0;
+      }
+
+      /* Create a custom radio button */
+      .form-check-mark {
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 12px;
+         width: 12px;
+         background-color: #aaa;
+         border-radius: 50%;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .form-check:hover input ~ .form-check-mark {
+         background-color: #333;
+      }
+
+      /* When the radio button is checked, add a blue background */
+      .form-check input:checked ~ .form-check-mark {
+         background-color: #2196F3;
+      }
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .form-check-mark:after {
+         content: "";
+         position: absolute;
+         display: none;
+      }
+
+      /* Show the indicator (dot/circle) when checked */
+      .form-check input:checked ~ .form-check-mark:after {
+         display: block;
+      }
+
+      /* Style the indicator (dot/circle) */
+      .form-check .form-check-mark:after {
+         top: 4px;
+         left: 4px;
+         width: 4px;
+         height: 4px;
+         border-radius: 50%;
+         background: white;
+      }
    </style>
 </head>
 
@@ -38,11 +108,13 @@
 <div id="popup-content">
    <h1>Auxilium</h1>
 
-   <div>
+   <br />
+
+   <label for="enabled" class="form-check">
+      Enable Auxilium Reader
       <input type="checkbox" id="enabled" name="enabled">
-      <label for="enabled">Enable Auxlium Reader</label>
-   </div>
-   <br/>
+      <span class="form-check-mark"></span>
+   </label>
 
    <div>
       <label for="gradient_size">Gradient Size (%)</label>
@@ -69,83 +141,100 @@
       <label for="color_text">Red-Blue</label>
    </div>
 
-   <div>
-      <p></p>
-      <p>======================</p>
-      <p>FOR COLORBLIND PEOPLE</p>
-      <p>======================</p>
-      <p></p>
-   </div>
+   <h3>Colorblindness Simulator</h3>
 
-	<div>
-		<input type="checkbox" id="RG_blind" name="RG_blind">
-		<label for="color_text">Blue-Yellow</label>
-	</div>
+   <label for="RG_blind" class="form-check">
+      Blue-Yellow
+      <input type="checkbox" id="RG_blind" name="RG_blind">
+      <span class="form-check-mark"></span>
+   </label>
 
-   <div>
-      <p></p>
-      <p>=========================</p>
-      <p>COLOURBLINDNESS SIMULATOR</p>
-      <p>=========================</p>
-      <p></p>
-   </div>
+   <h3>Colorblindness Simulator</h3>
 
    <form id="cvd_radios">
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type" id="normal"
-                                value="normal"><label
-            for="normal">Normal Color Vision</label></div>
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type" id="protanopia"
-                                value="protanopia"><label
-            for="protanopia">Red-Blind / Protanopia</label></div>
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type"
-                                id="deuteranopia" value="deuteranopia"><label
-            for="deuteranopia">Green-Blind /
-         Deuteranopia</label></div>
+      <label for="normal" class="form-check">
+         Normal Color Vision
+         <input class="inputRadio"
+                type="radio" name="type" id="normal"
+                value="normal">
+         <span class="form-check-mark"></span>
+      </label>
 
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type" id="tritanopia"
-                                value="tritanopia"><label
-            for="tritanopia">Blue-Blind / Tritanopia</label></div>
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type"
-                                id="protanomaly" value="protanomaly"><label
-            for="protanomaly">Red-Weak / Protanomaly</label></div>
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type"
-                                id="deuteranomaly"
-                                value="deuteranomaly"><label
-            for="deuteranomaly">Green-Weak /
-         Deuteranomaly</label></div>
+      <label for="protanopia" class="form-check">
+         Red-Blind / Protanopia
+         <input class="inputRadio"
+                type="radio" name="type" id="protanopia"
+                value="protanopia">
+         <span class="form-check-mark"></span>
+      </label>
 
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type"
-                                id="tritanomaly" value="tritanomaly"><label
-            for="tritanomaly">Blue-Weak /
-         Tritanomaly</label></div>
+      <label for="deuteranopia" class="form-check">
+         Green-Blind / Deuteranopia
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="deuteranopia" value="deuteranopia">
+         <span class="form-check-mark"></span>
+      </label>
 
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type"
-                                id="achromatopsia"
-                                value="achromatopsia"><label
-            for="achromatopsia">Monochromacy /
-         Achromatopsia</label>
-      </div>
+      <label for="tritanopia" class="form-check">
+         Blue-Blind / Tritanopia
+         <input class="inputRadio"
+                type="radio" name="type" id="tritanopia"
+                value="tritanopia">
+         <span class="form-check-mark"></span>
+      </label>
 
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type"
-                                id="achromatomaly"
-                                value="achromatomaly"><label
-            for="achromatomaly">Blue Cone
-         Monochromacy /
-         Achromatomaly</label></div>
+      <label for="protanomaly" class="form-check">
+         Red-Weak / Protanomaly
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="protanomaly" value="protanomaly">
+         <span class="form-check-mark"></span>
+      </label>
 
-      <div class="label"><input class="inputRadio"
-                                type="radio" name="type" id="deactivate"
-                                value="deactivate" checked><label
-            for="deactivate">Deactivate</label></div>
+      <label for="deuteranomaly" class="form-check">
+         Green-Weak / Deuteranomaly
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="deuteranomaly"
+                value="deuteranomaly">
+         <span class="form-check-mark"></span>
+      </label>
+
+      <label for="tritanomaly" class="form-check">
+         Blue-Weak / Tritanomaly
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="tritanomaly" value="tritanomaly">
+         <span class="form-check-mark"></span>
+      </label>
+
+      <label for="achromatopsia" class="form-check">
+         Monochromacy / Achromatopsia
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="achromatopsia"
+                value="achromatopsia">
+         <span class="form-check-mark"></span>
+      </label>
+
+      <label for="achromatomaly" class="form-check">
+         Blue Cone Monochromacy / Achromatomaly
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="achromatomaly"
+                value="achromatomaly">
+         <span class="form-check-mark"></span>
+      </label>
+
+      <label for="deactivate" class="form-check">
+         Deactivate
+         <input class="inputRadio"
+                type="radio" name="type"
+                id="deactivate"
+                value="deactivate">
+         <span class="form-check-mark"></span>
+      </label>
    </form>
 
 
