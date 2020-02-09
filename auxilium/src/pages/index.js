@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Dyslexia from "./dyslexia";
 // import Footer from '../components/navigation/Footer';
-import Slider from "../components/slider"
+import Slider from "../components/Slider"
 import CiscoImage from "../images/cisco.jpg"
 import NextJumpImage from "../images/nextjump.jpg"
 import ThoughtMachineImage from "../images/thoughtmachine.jpg"
