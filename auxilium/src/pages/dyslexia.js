@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../static/fonts/fonts.css";
 import image from "../images/OpenDyslexic.jpg";
+import Layout from "../components/layout";
 
 const Dyslexia = () => {
    return (
@@ -24,6 +25,5 @@ const Dyslexia = () => {
       </div>
    );
 };
-
 
 export default Dyslexia;

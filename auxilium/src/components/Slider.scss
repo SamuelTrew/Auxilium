@@ -1,0 +1,61 @@
+$image-width: 360px;
+$image-height: 226px;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 226px;
+}
+
+.image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.image img {
+  display: block;
+  vertical-align: middle;
+  width: $image-width;
+  height: $image-height;
+}
+
+.overlay {
+}
+
+.slider {
+  position: absolute;
+  z-index: 9;
+  width: 10px;
+  height: $image-height;
+  background-color: black;
+  left: calc(#{$image-width} / 2 - 5px);
+}
+
+.slider .circle {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+  top: calc(#{$image-height} / 2 - 20px);
+  left: -15px;
+}
+
+.filter-pro {
+  filter: url('filters.svg#protanopia');
+}
+
+.filter-undo {
+  filter: url('filters.svg#testM');
+}
+.filter-undo2 {
+  filter: url('filters.svg#testM2');
+}
