@@ -1,9 +1,14 @@
+<<<<<<< HEAD
+.dys_bod {
+  font-family: "OpenDyslexic", serif;
+  font-size: 18px;
+=======
 @font-face {
   font-family: "OpenDyslexic";
   src: local("OpenDyslexic"), url("../../dyslexic_font/OpenDyslexic-Regular.otf") format("trutype");
+>>>>>>> af4373bc9096b2607af4a79dacb739bde023f882
 }
 
-.dys_bod {
-  font-family: OpenDyslexic, serif;
-  font-size: 30px;
+.pad {
+  padding: 5px
 }
