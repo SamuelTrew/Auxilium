@@ -1,0 +1,21 @@
+{
+  "name": "Gradient Reader",
+  "version": "0.0.1",
+  "description": "Read faster using color gradients",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "bg.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Apply gradients",
+    "default_popup": "menu/index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://*/",
+    "https://*/"
+  ]
+}
