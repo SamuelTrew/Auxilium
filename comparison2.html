@@ -33,10 +33,6 @@
     }
 
     .overlay {
-      display: block;
-      vertical-align: middle;
-      width: var(--image-width);
-      height: var(--image-height);
     }
 
     .slider {
@@ -71,14 +67,9 @@
     .filter-undo2 {
       filter: url('filters.svg#testM2');
     }
-
-    #f1, #f2 {
-      background-color: black;
-    }
   </style>
   <script>
     function initComparisons() {
-      let body = document.getElementsByTagName("body")[0];
       let overlay = document.getElementsByClassName("overlay");
       for (let i = 0; i < overlay.length; i++) {
         compareImages(overlay[i]);
@@ -123,35 +114,17 @@
         }
       }
     }
-
-    function handleClick(cb) {
-      if (cb.checked) {
-
-      }
-    }
-
-    function go() {
-      let frame1 = document.getElementById("f1");
-      let frame2 = document.getElementById("f2");
-    }
   </script>
 </head>
 <body>
-  <iframe id="f1" height="500px" width="500px" src="https://amazon.com"></iframe>
-  <iframe id="f2" height="500px" width="500px"></iframe>
-
-  <div>
-    <label><input type='checkbox' onclick='handleClick(this);'>Enable</label>
-  </div>
-
   <div class="container">
     <div class="image">
-      <img class="normal" src="test.png">
-    </div>
-    <div class="slider"><div class="circle"></div></div>
-    <div class="image overlay">
       <img class="filter-pro" src="test.png">
     </div>
+    <div class="slider"><div class="circle"></div></div>
+    <div class="image overlay">
+      <img class="normal" src="test.png">
+    </div>
   </div>
 
   <div class="container">
@@ -194,6 +167,6 @@
     </div>
   </div>
 
-  <script>window.onload = initComparisons;</script>
+  <script>initComparisons();</script>
 </body>
 </html>
