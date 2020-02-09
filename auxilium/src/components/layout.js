@@ -30,10 +30,11 @@ const Layout = ({ children }) => {
     <>
       <NavBar/>
       <div id="outer-container">
-        <main id="page-wrap" style={{marginTop: '60px'}}>
+        <main id="page-wrap" style={{marginTop: '60px',}}>
           {children}
         </main>
       </div>
+      <Footer/>
     </>
   )
 }
