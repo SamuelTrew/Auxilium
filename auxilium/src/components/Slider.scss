@@ -1,13 +1,13 @@
-$image-width: 336px;
-$image-height: 195px;
+$image-width: 672px;
+$image-height: 390px;
 
 * {
   box-sizing: border-box;
 }
 
-.container {
+.rootContainer {
   position: relative;
-  height: 226px;
+  height: $image-height;
 }
 
 .image {

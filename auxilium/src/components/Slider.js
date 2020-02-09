@@ -3,7 +3,7 @@ import './Slider.scss';
 
 const Slider = ({ img_src, filter_type }) => {
   return (
-    <div className="container">
+    <div className="rootContainer">
       <div className="image">
         <img className={"filter-" + filter_type} src={ img_src } />
       </div>

@@ -12,7 +12,10 @@ import ImprobableImage from "../images/improbable.jpg"
 import EFImage from "../images/ef.png"
 import ImageUpload from "../components/ImageUpload";
 
-import TestSection from "../components/pageSections/TestSection";
+import ColourBlindnessSection from "../components/pageSections/ColourBlindnessSection";
+import ADHDSection from "../components/pageSections/ADHDSection";
+import DyslexiaSection from "../components/pageSections/DyslexiaSection";
+import IntroSection from "../components/pageSections/IntroSection";
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -69,20 +72,10 @@ class IndexPage extends React.Component {
     return (
       <>
         <Layout>
-          <ImageUpload/>
-          <h1>hello</h1>
-          <Slider img_src={CiscoImage} />
-          <br />
-          <Slider img_src={NextJumpImage} />
-          <br />
-          <Slider img_src={ThoughtMachineImage} />
-          <br />
-          <Slider img_src={AmexImage} />
-          <br />
-          <Slider img_src={ImprobableImage} />
-          <br />
-          <Slider img_src={EFImage} />
-          <br />
+          <IntroSection/>
+          <ColourBlindnessSection/>
+          <DyslexiaSection/>
+          <ADHDSection/>
         </Layout>
       </>
     );

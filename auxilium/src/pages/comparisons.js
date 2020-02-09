@@ -27,7 +27,7 @@ class ComparisonPage extends React.Component {
 
   handleOptionChange = changeEvent => {
     this.setState({
-      filter_type: changeEvent.target.value
+      filter_type: changeEvent.currentTarget.firstElementChild.firstElementChild.value
     });
   }
 
@@ -85,131 +85,141 @@ class ComparisonPage extends React.Component {
     return (
       <>
         <Layout>
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="protanopia"
-                checked={this.state.filter_type === "protanopia"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Protanopia
-            </label>
-          </div>
+          <div className="container comparisons-container">
+            <div className="container__row container-comparisons-row">
+              <div className="container__col-sm-3">
+                <h3>Select simulation</h3>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Protanopia
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="protanopia"
+                      checked={this.state.filter_type === "protanopia"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="protanomaly"
-                checked={this.state.filter_type === "protanomaly"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Protanomaly
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Protanomaly
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="protanomaly"
+                      checked={this.state.filter_type === "protanomaly"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="deuteranopia"
-                checked={this.state.filter_type === "deuteranopia"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Deuteranopia
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Deuteranopia
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="deuteranopia"
+                      checked={this.state.filter_type === "deuteranopia"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="deuteranomaly"
-                checked={this.state.filter_type === "deuteranomaly"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Deuteranomaly
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Deuteranomaly
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="deuteranomaly"
+                      checked={this.state.filter_type === "deuteranomaly"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="tritanopia"
-                checked={this.state.filter_type === "tritanopia"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Tritanopia
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Tritanopia
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="tritanopia"
+                      checked={this.state.filter_type === "tritanopia"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="tritanomaly"
-                checked={this.state.filter_type === "tritanomaly"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              tritanomaly
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Tritanomaly
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="tritanomaly"
+                      checked={this.state.filter_type === "tritanomaly"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="achromatopsia"
-                checked={this.state.filter_type === "achromatopsia"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Achromatopsia
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Achromatopsia
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="achromatopsia"
+                      checked={this.state.filter_type === "achromatopsia"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
 
-          <div className="form-check">
-            <label>
-              <input
-                type="radio"
-                name="react-tips"
-                value="achromatomaly"
-                checked={this.state.filter_type === "achromatomaly"}
-                onChange={this.handleOptionChange}
-                className="form-check-input"
-              />
-              Achromatomaly
-            </label>
-          </div>
+                <div className="form-check" onClick={this.handleOptionChange}>
+                  <label>
+                    Achromatomaly
+                    <input
+                      type="radio"
+                      name="simulation"
+                      value="achromatomaly"
+                      checked={this.state.filter_type === "achromatomaly"}
+                      readOnly
+                    />
+                    <span className="form-check-mark"></span>
+                  </label>
+                </div>
+              </div>
 
-          <h1>hello</h1>
-          <Slider img_src={CiscoImage} filter_type={this.state.filter_type} />
-          <br />
-          <Slider img_src={NextJumpImage} filter_type={this.state.filter_type} />
-          <br />
-          <Slider img_src={ThoughtMachineImage} filter_type={this.state.filter_type} />
-          <br />
-          <Slider img_src={AmexImage} filter_type={this.state.filter_type} />
-          <br />
-          <Slider img_src={ImprobableImage} filter_type={this.state.filter_type} />
-          <br />
-          <Slider img_src={EFImage} filter_type={this.state.filter_type} />
-          <br />
+              <div className="container__col-sm-2"></div>
+
+              <div className="container__col-sm-7 container-comparisons-images">
+                <Slider img_src={CiscoImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={NextJumpImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={ThoughtMachineImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={AmexImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={ImprobableImage} filter_type={this.state.filter_type} />
+                <br />
+                <Slider img_src={EFImage} filter_type={this.state.filter_type} />
+                <br />
+              </div>
+            </div>
+          </div>
         </Layout>
       </>
     );
