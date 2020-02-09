@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="419px" height="99px" viewBox="0 0 419 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Auxilium" font-family="Avenir-Book, Avenir" font-size="50" font-weight="normal" letter-spacing="15" fill="#36A1A5">
+            <tspan x="101" y="68">Auxilium</tspan>
+        </text>
+        <circle id="Oval" fill="#4B9A9D" cx="46" cy="34" r="18"></circle>
+        <circle id="Oval" fill="#909090" cx="74.5" cy="60.5" r="14.5"></circle>
+        <circle id="Oval" fill="#96E3E6" cx="38" cy="67" r="11"></circle>
+    </g>
+</svg>

@@ -6,6 +6,8 @@ import Dyslexia from "./dyslexia";
 import Slider from "../components/Slider"
 import TestImage from "../images/test.png"
 
+import TestSection from "../components/pageSections/TestSection";
+
 class IndexPage extends React.Component {
   componentDidMount() {
     function initComparisons() {
@@ -61,7 +63,7 @@ class IndexPage extends React.Component {
     return (
       <>
         <Layout>
-          <h1>hello</h1>
+          <TestSection/>
           <Slider img_src={TestImage} />
         </Layout>
       </>
