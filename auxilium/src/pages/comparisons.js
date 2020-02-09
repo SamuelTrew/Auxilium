@@ -1,8 +1,5 @@
 import React from "react";
-// import { Link } from "gatsby";
 import Layout from "../components/layout";
-import Dyslexia from "./dyslexia";
-// import Footer from '../components/navigation/Footer';
 import Slider from "../components/Slider"
 import CiscoImage from "../images/cisco.jpg"
 import NextJumpImage from "../images/nextjump.jpg"
@@ -11,9 +8,7 @@ import AmexImage from "../images/amex.jpg"
 import ImprobableImage from "../images/improbable.jpg"
 import EFImage from "../images/ef.png"
 
-import TestSection from "../components/pageSections/TestSection";
-
-class IndexPage extends React.Component {
+class ComparisonPage extends React.Component {
   componentDidMount() {
     function initComparisons() {
       console.log("TEST")
@@ -87,4 +82,4 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage;
+export default ComparisonPage;

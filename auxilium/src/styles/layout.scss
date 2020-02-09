@@ -16,6 +16,10 @@ $grid__cols: 12;
   text-align: center;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 $map-grid-props: (
         '': 0,
         '-sm': $grid__bp-sm,
@@ -75,21 +79,10 @@ $map-grid-props: (
   }
   &__row {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     width: 100%;
   }
   @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);
   }
-}
-
-.page-section-list {
-  @media (min-width: 992px) {
-    overflow-y: scroll;
-    height: 100vh;
-  } 
-}
-
-.section-container {
-  padding: 5%;
 }
